@@ -2,30 +2,67 @@
 
 This tutorial guides you through a pipeline that processes PDF documents, extracts metadata and other relevant information using GPT-4o, and outputs the results in a structured JSON format. The pipeline involves converting PDF pages to images, encoding these images, and sending them to the OpenAI API for processing.
 
-## Pipeline Overview
+### The Bigger Picture
 
-1. **Convert PDF to Images**: Use \`pdf2image\` to convert each page of the PDF into an image.
-2. **Resize Images**: Ensure the images are below 20MB by resizing and compressing them.
-3. **Encode Images**: Convert the images to Base64 format.
-4. **Extract Metadata**: Use the GPT-4o API to extract metadata from the images.
-5. **Compile Results**: Aggregate the extracted metadata into a final JSON format.
+We want to create a robust and automated solution to extract meaningful metadata from complex PDF documents. This pipeline is particularly useful for complex documents where extracting structured data manually would be time-consuming and prone to errors. Our focus is on understanding the images and tables contained in the PDFs and generating detailed metadata for them.
+
+### Use Case
+
+This pipeline is designed to help teams who frequently deal with large volumes of documents. By automating the metadata extraction process, we can save time and improve the accuracy of data extraction. The structured JSON output can be easily integrated into databases, search engines, and other tools for further analysis and retrieval.
+
+### Why This is Useful
+
+1. **Efficiency**: Automates the process of extracting metadata, significantly reducing the time required compared to manual extraction.
+2. **Accuracy**: Utilizes GPT-4o’s advanced natural language processing capabilities to accurately extract information from complex documents.
+3. **Integration**: Provides structured JSON data that can be easily integrated into various systems for enhanced data management and retrieval.
 
 ## Libraries and Tools
 
 - **pdf2image**: Converts PDF pages to images.
 - **Pillow**: Handles image resizing and compression.
 - **OpenAI**: Interacts with the GPT-4o API to extract metadata.
-- **dotenv**: Loads environment variables from a \`.env\` file.
 - **fitz (PyMuPDF)**: Reads and processes PDF documents.
 - **base64**: Encodes images to Base64 format for API usage.
+
+## Pipeline Overview
+
+In this pipeline, we aim to extract and structure metadata from PDF documents using the advanced capabilities of GPT-4o. This process involves several steps to ensure that the data is accurately extracted and useful for further processing and analysis. Here are the steps:
+
+1. **Convert PDF to Images**: Use `pdf2image` to convert each page of the PDF into an image.
+2. **Resize Images**: Ensure the images are below 20MB by resizing and compressing them.
+3. **Encode Images**: Convert the images to Base64 format.
+4. **Extract Metadata**: Use the GPT-4o API to extract metadata from the images.
+5. **Compile Results**: Aggregate the extracted metadata into a final JSON format.
+
+```mermaid
+graph TD;
+    A[Input PDF] --> B[Convert PDF to Images]
+    B --> C[Resize and Compress Images]
+    C --> D[Encode Images to Base64]
+    D --> E[Extract Metadata using GPT-4o]
+    E --> F[Compile Results into JSON]
+    F --> G[Output Metadata JSON]
+```
+
+## Why Use JSON Schema?
+
+Using a JSON schema for the extracted metadata allows for a structured and consistent way to store and retrieve information. This structured format is particularly useful for further processing, analysis, or integration with other systems.
+
+### Why We Need GPT-4o Vision Capabilities
+
+GPT-4o’s vision capabilities allow us to process and understand the content of images and tables within the PDF documents. This is crucial for:
+
+- **Extracting Image Captions and Descriptions**: Identifying and understanding the context of images within the documents.
+- **Handling Complex Layouts**: Accurately extracting metadata from documents with complex layouts such as multi-column text, embedded images, and tables.
+- **Enhanced Data Extraction**: Combining text and visual data to provide a more comprehensive extraction of metadata.
 
 ## Detailed Steps
 
 ### 1. Convert PDF to Images
 
-We use \`pdf2image\` to convert each page of the PDF into an image. This library relies on \`poppler\`, a PDF rendering library.
+We use `pdf2image` to convert each page of the PDF into an image. This library relies on `poppler`, a PDF rendering library.
 
-\`\`\`python
+```python
 from pdf2image import convert_from_path
 
 def convert_pdf_to_images(pdf_path, max_size=(1024, 1024), max_file_size=20*1024*1024):
@@ -45,7 +82,7 @@ def convert_pdf_to_images(pdf_path, max_size=(1024, 1024), max_file_size=20*1024
                 
         image_paths.append(image_path)
     return image_paths
-\`\`\`
+```
 
 ### 2. Resize Images
 
@@ -55,19 +92,19 @@ Resizing images ensures they are below the 20MB size limit for the OpenAI API.
 
 Encode the resized images to Base64 format for sending to the API.
 
-\`\`\`python
+```python
 import base64
 
 def encode_image_to_base64(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
-\`\`\`
+```
 
 ### 4. Extract Metadata
 
 Use the GPT-4o API to extract metadata from the Base64-encoded images. The metadata includes the title, authors, institutions, image captions, table descriptions, and a summary of each page.
 
-\`\`\`python
+```python
 from openai import OpenAI
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -103,19 +140,19 @@ def extract_metadata_from_page(image_base64):
     content = response.choices[0].message['content']
 
     # Clean the response to remove Markdown formatting
-    if content.startswith("```json"):
+    if content.startswith("\`\`\`json"):
         content = content[7:]  # Remove the leading \`\`\`json
-    if content.endswith("```"):
+    if content.endswith("\`\`\`"):
         content = content[:-3]  # Remove the trailing \`\`\`
 
     return content
-\`\`\`
+```
 
 ### 5. Compile Results
 
 Aggregate the extracted metadata into a final JSON structure.
 
-\`\`\`python
+```python
 def coalesce(*values):
     return next((value for value in values if value), None)
 
@@ -145,23 +182,6 @@ def extract_metadata(pdf_path):
 
     print(f"Final metadata: \${final_metadata}")
     return final_metadata
-\`\`\`
-
-## Why Use JSON Schema?
-
-Using a JSON schema for the extracted metadata allows for a structured and consistent way to store and retrieve information. This structured format is particularly useful for further processing, analysis, or integration with other systems.
-
-## Visualization of the Pipeline
-
-\`\`\`mermaid
-graph TD;
-    A[Input PDF] --> B[Convert PDF to Images]
-    B --> C[Resize and Compress Images]
-    C --> D[Encode Images to Base64]
-    D --> E[Extract Metadata using GPT-4o]
-    E --> F[Compile Results into JSON]
-    F --> G[Output Metadata JSON]
-\`\`\`
+```
 
 By following this tutorial, you can effectively extract and structure metadata from PDF documents using GPT-4o.
-
