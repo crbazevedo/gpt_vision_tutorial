@@ -1,1 +1,211 @@
-{"Title": "Machine Learning Operations for Accelerator Control", "Authors": ["Tia Miceli (Lead - Accelerator AI/ML Group, Accelerator Controls Department, FNAL)"], "Institutions": ["Fermi Research Alliance, LLC"], "Number of Pages": 24, "Number of Images": 24, "Number of Tables": 2, "Image Captions": ["An aerial view of the Fermilab campus with several office and research buildings.", "A slide with the title 'Why you need a sustainable way of developing, deploying, monitoring, and servicing ML applications (for accelerators)' and three bullet points discussing issues in machine learning applications for accelerators.", "Table discussing issues and best practices to mitigate reproducibility problems in AI/ML.", "A table summarizing typical and tricky issues faced in AI/ML reproducibility along with their mitigating best practices. Issues include differences in weights, human mishandling, and environmental differences.", "Image of a character with text 'NOT SURE IF TROLLING OR JUST STUPID'.", "A slide discussing components necessary for deploying AI/ML capabilities in operational settings, including live-streaming data ingestion, model inference serving, and prediction streaming with aspects of logging, monitoring, and automating actions.", "A diagram illustrating the workflow for Machine Learning Operations (MLOps) consisting of four major stages: Data Management, AI/ML Modeling, Operations Development, and System Operations.", "A workflow diagram for MLOps showing the stages: Data Management (collect data, label/split), AI/ML Modeling, Operations Development, System Operations.", "A diagram showing the workflow for MLOps, depicting stages such as Data Management, AI/ML Modeling, Operations Development, and System Operations with bullet points under each category.", "A diagram showing the workflow for machine learning operations, including data management, AI/ML modeling, operations development, and system operations.", "A diagram showing the workflow for MLOps, covering data management, AI/ML modeling, operations development, and system operations.", "A diagram depicting the workflow for MLOps, highlighting Data Management, AI/ML Modeling, Operations Development, and System Operations stages.", "A workflow diagram illustrating the MLOps framework, including Data Management, AI/ML Modeling, Operations Development, and System Operations stages.", "A diagram showing the workflow for MLOps, including data management, AI/ML modeling, operations development, and system operations.", "A diagram illustrating the workflow for MLOps, including Data Management, AI/ML Modeling, Operations Development, and System Operations.", "A diagram showing the workflow of MLOps, detailing stages such as Data Management, AI/ML Modeling, Operations Development, and System Operations.", "A diagram showing the workflow for MLOps, including Data Management, AI/ML Modeling, Operations Development, and System Operations.", "A diagram illustrating the workflow for MLOps, including steps for Data Management, AI/ML Modeling, Operations Development, and System Operations.", "A chart comparing Software Product Development Models: Waterfall and Agile. Waterfall steps are Analysis, Planning, Requirements, Design, Build, Test, and Maintain. Agile steps are Design, Define, Analyze, Deploy, Test, and Backlog.", "Diagram illustrating the components required for accelerator controls MLOps, including Data Management, Model Development, Operations Development, System Operations, and Common Tools.", "A diagram showing the infrastructure required for accelerator controls MLOps.", "A silhouette of a person on a horse herding cats with the text 'BEST JOB DESCRIPTION EVER'.", "A headshot of Tia Miceli with an email address miceli@fnal.gov.", "A prominent building, most likely a pavilion, is lit up at night, reflecting beautifully in a calm body of water. The text overlay provides details about the workshop."], "Table Descriptions": [{"Description": "Issues and mitigating best practices for reproducibility problems in AI/ML.", "Column Labels": ["Issue", "Mitigating Best Practice"], "Row Labels": ["Typical", "Weights are a little different", "Weights are so different that model predictions are very different.", "Tricky"], "Number of Columns": 2, "Number of Rows": 4}, {"Description": "Issues and Mitigating Best Practices in AI/ML Reproducibility", "Column Labels": ["Issue", "Mitigating Best Practice"], "Row Labels": ["Typical Weights are a little different", "Weights are so different that model predictions are very different.", "Tricky Human mishandling, hard to detect", "Different datasets give different weights", "Works for me, but not for you"], "Number of Columns": 2, "Number of Rows": 5}], "Page Summaries": ["This page presents a talk or presentation titled 'Machine Learning Operations for Accelerator Control' by Tia Miceli, the lead of the Accelerator AI/ML Group at the FNAL. The presentation is part of the EPICS Collaboration Meeting held from 24-28 April 2023. The page also features an aerial image of the Fermilab campus.", "This page is a slide discussing the necessity of a sustainable approach to developing, deploying, monitoring, and servicing machine learning applications for accelerators. It highlights critical issues such as knowledge loss, reproducibility problems in deep learning, and lifecycle handling.", "This page discusses the importance of sustainable methods for developing, deploying, monitoring, and servicing machine learning applications in the field of accelerators. It highlights the necessity of self-documenting procedures, advanced and automated bookkeeping, and automated common updates to tackle issues such as personnel turnover, reproducibility problems in deep learning, and lifecycle handling of applications.", "This page addresses the reproducibility problem in AI/ML, particularly the difficulty in reproducing model weights. It categorizes issues into typical and tricky with mitigating best practices for each.", "This page discusses the reproducibility problem in AI/ML, quoting an issue regarding consistent model weights. It outlines a table that categorizes the reproducibility problems into 'Typical' and 'Tricky' categories and provides best practices to mitigate each listed issue.", "This page provides guidance on deploying AI controller models. It highlights potential issues like data drift and the importance of monitoring data and performance. The page emphasizes the role of MLOps in alarming, monitoring, triggering workflows, automating retraining, and deploying updated models.", "This page highlights the requirements for deploying an AI/ML capability for operations, emphasizing that it needs more than data science and involves engineering and stewardship. Key components include live-streaming data ingestion, model inference serving, and prediction streaming along with logging, monitoring, and automating actions.", "This page displays a visual representation of the workflow for Machine Learning Operations (MLOps) and highlights its major stages, which include Data Management, AI/ML Modeling, Operations Development, and System Operations. The author, Tia Miceli, is affiliated with Fermilab.", "This page presents a workflow for machine learning operations (MLOps) in accelerator control, outlining the key stages: Data Management, AI/ML Modeling, Operations Development, and System Operations.", "This page presents a diagram summarizing the workflow for Machine Learning Operations (MLOps) in accelerator control. The diagram highlights the phases of Data Management (including data collection, labeling, and standardization), AI/ML Modeling, Operations Development, and System Operations. Each phase is accompanied by bullet points describing key activities and systems involved.", null, "This page presents a workflow for MLOps, including stages such as data management, AI/ML modeling, operations development, and system operations. It highlights the use of standardized data formats, dataset management systems, and common tools for model development and version control.", "This page describes the workflow for Machine Learning Operations (MLOps) in accelerator control. It includes key processes such as data management, AI/ML modeling, operations development, and system operations, using common tools and systems to ensure standardization and effective outcomes.", "This page presents the workflow for integrating machine learning operations (MLOps) in accelerator control. The workflow includes stages such as Data Management, AI/ML Modeling, and the use of standardized tools and systems for efficient model development and operations.", "This page outlines the workflow for Machine Learning Operations (MLOps) for accelerator control. The diagram illustrates the stages of data management, AI/ML modeling, operations development, and system operations, detailing the processes and tools involved in each stage. It highlights the importance of standardized data collection, dataset management systems, common tools for model development, and version control.", "This page presents a detailed diagram describing the workflow for machine learning operations (MLOps) in accelerator control. The diagram encompasses four main stages: Data Management, AI/ML Modeling, Operations Development, and System Operations. Each stage includes various subprocesses and tasks essential for successful MLOps implementation.", "This page outlines the workflow for Machine Learning Operations (MLOps) for accelerator control. It includes stages like Data Management (collecting and labeling data), AI/ML Modeling (training and testing models), Operations Development (preparing live data and defining monitoring thresholds), and System Operations (deploying and monitoring models). Key tools and interfaces for ML engineers are also noted, such as dataset management systems, model development systems, and model registries.", "This page illustrates the workflow for machine learning operations in accelerator control. It includes a comprehensive diagram that outlines the stages from data management, AI/ML modeling, operations development, to system operations. Key components such as standardized data loggers, dataset management systems, common tools for model development, interfaces for ML engineers, and the requirements for server specifications are also described.", "The page presents a detailed workflow for Machine Learning Operations (MLOps) specifically for Accelerator Control. It outlines processes including Data Management, AI/ML Modeling, Operations Development, and System Operations. Each step includes detailed sub-tasks and tools necessary for implementation.", "This page introduces MLOps (Machine Learning Operations) as an evolution of DevOps (Development Operations) for accelerating software development and deployment. It emphasizes Agile practices and Continuous Integration/Continuous Delivery (CI/CD) methods. The page also highlights that DevOps has roots in Lean Manufacturing practices.", "The page details the infrastructure requirements for implementing MLOps in accelerator controls. It categorizes the necessary components into Data Management, Model Development, Operations Development, System Operations, and Common Tools, highlighting the key functionalities and tools needed in each category.", "This page summarizes Fermilab's efforts in building out accelerator controls with MLOps, including formalizing requirements, collaborating with other accelerator laboratories, and developing open-source toolsets. The emphasis is on integrating with the current and modernized control system, interviewing various laboratories for collaboration, and utilizing various data management and workflow tools.", "This page is about crowd-sourcing ideas for the Fermilab Accelerator Controls AI/ML Group's MLOps infrastructure. It encourages sharing workflows and experiences. The page includes an image of a person herding cats labeled as 'BEST JOB DESCRIPTION EVER', indicating a humorous take on the role, and a headshot of Tia Miceli along with her email address for contact.", "This page provides information about the 4th ICFA Beam Dynamics Mini-Workshop focusing on machine learning applications for particle accelerators. The event is scheduled to take place from 5th to 8th March 2024 in Gyeongju, Republic of Korea. The poster includes a night time image of a lit-up pavilion reflected in a body of water. It lists the website for more information as www.indico.kr/e/ml2024/ and credits the Pohang Accelerator Laboratory and POSTECH."]}
+{
+    "Title": "Machine Learning Operations for Accelerator Control",
+    "Authors": [
+        "Tia Miceli (Lead - Accelerator AI/ML Group, Accelerator Controls Department, FNAL)"
+    ],
+    "Institutions": [
+        "Fermi Research Alliance, LLC"
+    ],
+    "Number of Pages": 24,
+    "Number of Images": 25,
+    "Number of Tables": 2,
+    "Image Captions": [
+        "An aerial view of the Fermilab campus, showing various buildings and surrounding greenery.",
+        "A slide discussing issues faced in developing sustainable ML applications for accelerators, mentioning the departure of key personnel, the reproducibility problem, and life-cycle handling concerns.",
+        "A slide discussing the need for sustainable methodologies in ML application lifecycle for accelerators, highlighting self-documenting procedures, advanced bookkeeping, and automated updates.",
+        "A table addressing issues and mitigating best practices for model weight reproducibility in AI/ML.",
+        "A table outlining typical and tricky issues with reproducibility in AI/ML and their mitigating best practices.",
+        "A meme with the text 'NOT SURE IF TROLLING OR JUST STUPID' with a character making a confused expression.",
+        "Text slide discussing the requirements for deploying an AI/ML capability for operations, including data dissemination and engineering stewardship.",
+        "A diagram illustrating the workflow for MLOps, including sections for Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "A workflow diagram showing the stages of MLOps including Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "Workflow diagram for MLOps showing stages: Data Management, AI/ML Modeling, Operations Development, and System Operations with associated tasks.",
+        "A diagram showing the workflow of MLOps from Data Management to AI/ML Modeling to Operations Development and System Operations.",
+        "Diagram illustrating the workflow for MLOps, including Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "A diagram showing the workflow for Machine Learning Operations (MLOps) including Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "Graphical representation of the workflow for MLOps highlighting Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "Diagram detailing the workflow for MLOps, including Data Management, AI/ML Modeling, and Operations Development.",
+        "A diagram showing the workflow for Machine Learning Operations (MLOps), detailing processes such as Data Management, AI/ML Modeling, and Operations Development, alongside standardized tools and interfaces for ML Engineers.",
+        "A workflow diagram showing the stages of Machine Learning Operations (MLOps), including Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "A diagram showing the workflow for MLOps, including stages such as Data Management, AI/ML Modeling, Operations Development, and System Operations.",
+        "A comprehensive diagram illustrating the workflow for Machine Learning Operations (MLOps) in accelerator control, including data management, AI/ML modeling, operations development, and system operations.",
+        "Software Product Development Models diagram depicting Waterfall and Agile methodologies.",
+        "Diagram outlining the infrastructure required for accelerator controls MLOps, including data management, model development, operations development, system operations, and common tools.",
+        "A diagram detailing the infrastructure required for accelerator controls MLOps, divided into categories: Data Management, Model Development, Operations Dev, and System Operations.",
+        "A silhouette of a person riding a horse with dogs running alongside, with the text 'BEST JOB DESCRIPTION EVER'. Caption: Tia Miceli, Fermilab Accelerator AI/ML Group Lead a.k.a. 'Top Cat Herder in the Midwest!'",
+        "A photo of Tia Miceli with the email address miceli@fnal.gov below it.",
+        "An illuminated pavilion reflecting in the water, used as a promotional image for the 4th ICFA Beam Dynamics Mini-Workshop on Machine Learning Applications for Particle Accelerators."
+    ],
+    "Table Descriptions": [
+        {
+            "Description": "Issues and mitigating best practices for model weight reproducibility in AI/ML",
+            "Column Labels": [
+                "Issue",
+                "Mitigating Best Practice"
+            ],
+            "Row Labels": [
+                "Typical",
+                "Tricky"
+            ],
+            "Number of Columns": 2,
+            "Number of Rows": 3
+        },
+        {
+            "Description": "Issues and Mitigating Best Practices for AI/ML Reproducibility",
+            "Column Labels": [
+                "Issue",
+                "Mitigating Best Practice"
+            ],
+            "Row Labels": [
+                "Weights are a little different",
+                "Weights are so different that model predictions are very different.",
+                "Human mishandling, hard to detect",
+                "Different datasets give different weights",
+                "Works for me, but not for you"
+            ],
+            "Number of Columns": 2,
+            "Number of Rows": 5
+        }
+    ],
+    "Page Summaries": [
+        "This page is a title slide for a presentation on Machine Learning Operations for Accelerator Control by Tia Miceli, a lead member of the Accelerator AI/ML Group in the Accelerator Controls Department at FNAL. The presentation is part of the EPICS Collaboration Meeting taking place from 24-28 April 2023.",
+        "This page highlights the importance of creating sustainable methods for developing, deploying, monitoring, and servicing machine learning applications in particle accelerators. It addresses challenges such as the loss of key personnel, reproducibility issues in deep learning, and lifecycle handling of the applications.",
+        "The slide emphasizes the importance of sustainable practices in developing, deploying, monitoring, and servicing machine learning applications for accelerators, focusing on challenges such as personnel turnover, reproducibility in deep learning, and lifecycle management.",
+        "The page discusses the reproducibility problem in AI/ML, specifically the difficulty in reproducing the same model weights across different training sessions. It includes a table that outlines issues and their mitigating best practices.",
+        "The page discusses common issues related to the reproducibility problem in AI and Machine Learning. It outlines a variety of issues that can arise, categorizes them into typical and tricky issues, and provides best practice mitigating strategies for each issue to ensure reproducibility in training AI/ML models.",
+        "The page discusses the challenges of deploying AI models in accelerator control, emphasizing the risks of data drift and model performance degradation. It suggests using MLOps for data and performance monitoring, alarming, triggering workflows, and automating model retraining and deployment.",
+        "This page covers the essentials of deploying machine learning operations (MLOps), emphasizing the necessity of comprehensive AI/ML capabilities for operations beyond mere data science tasks. It outlines the engineering and stewardship required to support activities such as live-streaming data ingestion, model inference serving, prediction streaming, logging, monitoring, and automating actions.",
+        null,
+        "This page presents a diagram illustrating the workflow for machine learning operations (MLOps) in accelerator control. The workflow is divided into stages including Data Management, AI/ML Modeling, Operations Development, and System Operations, detailing the steps of collecting data, labeling/splitting data, and releasing data.",
+        "This page presents a diagram that outlines the workflow for Machine Learning Operations (MLOps) specifically within the context of accelerator control. It breaks down the process into four main stages: Data Management, AI/ML Modeling, Operations Development, and System Operations, detailing specific tasks within each stage, such as standardized data logging and dataset management.",
+        "This page illustrates the workflow for machine learning operations (MLOps) in accelerator control, outlining the process from data management and AI/ML modeling to operations development and system operations. It also highlights the importance of standardized data logging, interfaces for machine learning engineers, and dataset management systems.",
+        "This page presents a diagram outlining the workflow for Machine Learning Operations (MLOps). The workflow includes stages such as Data Management, AI/ML Modeling, Operations Development, and System Operations. There are also notes on using standardized tools and systems for model development and dataset management.",
+        "This page presents a detailed workflow for Machine Learning Operations (MLOps), highlighting the steps involved in Data Management and AI/ML Modeling. It lists standardized tools and systems used in model development and dataset management, with an emphasis on maintaining a standardized format and tracking data versions.",
+        "This page outlines the workflow for Machine Learning Operations (MLOps) used in accelerator control, detailing stages such as Data Management, AI/ML Modeling, and the use of common tools for model development. The aim is to standardize and streamline processes for efficiency and optimization in system operations.",
+        "This page provides a workflow for Machine Learning Operations (MLOps), explaining the steps involved in Data Management, AI/ML Modeling, and Operations Development to enhance accelerator control. It also highlights the tools and standardized formats used to optimize the process.",
+        "This page presents a detailed diagram of the workflow for Machine Learning Operations (MLOps), covering stages such as Data Management, AI/ML Modeling, and Operations Development. It highlights standardized tools and interfaces for ML Engineers and provides an overview of processes including data collection, model training, and deployment.",
+        "This page presents the Workflow for Machine Learning Operations (MLOps) consisting of several stages: Data Management, AI/ML Modeling, Operations Development, and System Operations. The workflow includes steps like collecting data, labeling, training models, entering models into a registry, and deploying models in system operations. Essential tools and practices are also highlighted, including the Data Management System, Model Development System, and the Model Registry.",
+        "This page discusses the workflow for machine learning operations (MLOps) in accelerator control. It details the various stages involved, including Data Management, AI/ML Modeling, Operations Development, and System Operations. The diagram provides a detailed view of the interactions and processes at each stage.",
+        "This page presents an overview of the workflow for implementing machine learning operations in accelerator control. It details the stages from data management and AI/ML modeling to operations development and system operations, highlighting standardized data formats, model development tools, and interfaces for ML engineers.",
+        "This page discusses the relationship between MLOps (Machine Learning Operations) and DevOps (Development Operations). It highlights the importance of integrating and streamlining software development and deployment using agile practices and CI/CD (Continuous Integration and Continuous Delivery), along with emphasizing modern code version control, strict permissions on merging, and appropriate testing sizes. There's a fun fact noting DevOps' roots in Lean Manufacturing practices.",
+        "This page provides a diagram that describes the necessary infrastructure for implementing machine learning operations (MLOps) in accelerator controls. It covers aspects of data management, model development, operations development, and system operations, as well as common tools required for these processes.",
+        "The page discusses Fermilab's efforts to build and enhance their accelerator control systems using MLOps. It includes formalizations for system integration, collaborations with other laboratories, and the development of open source tools on a Kubernetes cluster.",
+        "This page discusses the Fermilab Accelerator Controls AI/ML Group's initiative to design a Machine Learning Operations (MLOps) infrastructure. The presenter, Tia Miceli, invites feedback on effective and ineffective workflow practices.",
+        "The page serves as a promotional flyer for the 4th ICFA Beam Dynamics Mini-Workshop focused on Machine Learning Applications for Particle Accelerators, taking place from 5 to 8 March 2024 in Gyeongju, Republic of Korea. The institutions involved include the Pohang Accelerator Laboratory and POSTECH."
+    ],
+    "extractedImages": [
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_14_img_1.png",
+            "page": 14
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_9_img_2.png",
+            "page": 9
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_14_img_2.png",
+            "page": 14
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_19_img_1.png",
+            "page": 19
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_9_img_1.png",
+            "page": 9
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_12_img_1.png",
+            "page": 12
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_12_img_2.png",
+            "page": 12
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_15_img_1.png",
+            "page": 15
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_20_img_1.png",
+            "page": 20
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_18_img_1.png",
+            "page": 18
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_8_img_1.png",
+            "page": 8
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_13_img_1.png",
+            "page": 13
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_13_img_2.png",
+            "page": 13
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_23_img_1.png",
+            "page": 23
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_6_img_1.png",
+            "page": 6
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_16_img_1.png",
+            "page": 16
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_23_img_2.png",
+            "page": 23
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_10_img_1.png",
+            "page": 10
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_10_img_2.png",
+            "page": 10
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_22_img_1.png",
+            "page": 22
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_17_img_1.png",
+            "page": 17
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_22_img_2.png",
+            "page": 22
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_11_img_1.png",
+            "page": 11
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_24_img_1.png",
+            "page": 24
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_1_img_1.png",
+            "page": 1
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_11_img_2.png",
+            "page": 11
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_24_img_3.png",
+            "page": 24
+        },
+        {
+            "file": "data/sample_documents/10.2172_1973632/page_24_img_2.png",
+            "page": 24
+        }
+    ],
+    "extractedTables": []
+}

@@ -1,0 +1,53 @@
+{
+    "page_number": 4,
+    "text_path": "data/sample_documents/10.2172_1973632/page_4.txt",
+    "images": [],
+    "tables": [
+        {
+            "page": 4,
+            "table_index": 1,
+            "columns": [
+                "Issue",
+                "Mitigating Best Practice"
+            ],
+            "rows": [
+                [
+                    "Weights are a little different",
+                    "Some variation expected if training in parallel and on variety of hardware.\nCheck within tolerance."
+                ],
+                [
+                    "Weights are so different that model\npredictions are very different.",
+                    "Training is getting stuck in local minima. A variety of training schema and\nhyper parameters and optimizers should be tried."
+                ],
+                [
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    ""
+                ],
+                [
+                    "",
+                    ""
+                ]
+            ],
+            "number_of_columns": 2,
+            "number_of_rows": 5
+        },
+        {
+            "page": 4,
+            "table_index": 2,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

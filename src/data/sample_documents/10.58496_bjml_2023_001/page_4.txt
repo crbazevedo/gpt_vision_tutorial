@@ -1,0 +1,31 @@
+4 Alsajri, Babylonian Journal of Machine Learning Vol.2023, 1–6
+4. RECENT WORKS ON REAL-TIME ENGINEERING APPLICATION
+4.1 Intelligent tutoring systems (ITS)
+computer systems that provide customized instruction and feedback to learners without human intervention [6]. They have
+the benefits of providing personalized learning at a student's own pace. Machine learning techniques have emerged as potent
+methods to enhance the capabilities of ITS [7]. Some major applications include:
+1. Student modeling: Machine learning can construct models to estimate a student's current knowledge, learning styles,
+interests etc. Algorithms like Bayesian networks, clustering and reinforcement learning are used to enable adaptive
+learning [6].
+2. Feedback generation: Natural language processing techniques empower intelligent systems to analyze student
+responses and provide tailored, constructive feedback automatically. Sentiment analysis helps determine
+appropriate feedback tone [7].
+3. Content creation: AI planning and expert systems help generate instructional content dynamically based on the
+student's profile and domain models. This allows adjusting the course as per background knowledge and skill gaps
+[6].
+4. Predictive analytics: Historical student data help train machine learning models to predict outcomes like student
+engagement, risk of dropout etc. Teachers can proactively customize interventions [7].
+Fig. 4. Intelligent tutoring system
+4.2 Machine Learning in Healthcare
+Machine learning has emerged as a powerful set of techniques for unlocking insights from healthcare data that can improve
+patient outcomes, diagnosis, and treatment planning [8]. Some major applications of machine learning in healthcare include:
+1. Precision Medicine: Machine learning analyzes patient data across imaging, genetics, lab tests etc. to offer
+personalized risk assessment and treatment recommendations for each individual [9].
+2. Medical Imaging Diagnosis: Algorithms can detect anomalies, tumors, lesions etc. in MRI, CT scan and other
+medical images. Computer vision techniques enable automated analysis for improved efficiency [10].
+3. Patient Risk Analytics : Models predict the risk profile of patients for conditions like diabetes, heart disease etc.
+This early assessment allows preventative interventions [8].
+4. Drug Discovery: Machine learning expedites analysis of molecular interactions to identify effective drug
+compounds. It also aids in tracking drug side-effects once launched [9].
+5. Virtual Health Assistants: NLP-powered chatbots serve as virtual nurses to help automate patient queries on
+symptoms or medication recommendations at scale for personalized care [10].

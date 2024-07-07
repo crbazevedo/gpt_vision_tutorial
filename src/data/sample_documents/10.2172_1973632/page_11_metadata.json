@@ -1,0 +1,191 @@
+{
+    "page_number": 11,
+    "text_path": "data/sample_documents/10.2172_1973632/page_11.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_11_img_1.png",
+            "xref": 121,
+            "width": 2940,
+            "height": 846,
+            "colorspace": "ICCBased",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_11_img_2.png",
+            "xref": 123,
+            "width": 1800,
+            "height": 210,
+            "colorspace": "ICCBased",
+            "filter": "FlateDecode"
+        }
+    ],
+    "tables": [
+        {
+            "page": 11,
+            "table_index": 1,
+            "columns": [
+                "",
+                null,
+                "",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                ""
+            ],
+            "rows": [
+                [
+                    null,
+                    null,
+                    null,
+                    "",
+                    null,
+                    "",
+                    null,
+                    "",
+                    null,
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "",
+                    ""
+                ],
+                [
+                    null,
+                    null,
+                    null,
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    null
+                ],
+                [
+                    null,
+                    "",
+                    null,
+                    "",
+                    null,
+                    "",
+                    null,
+                    "",
+                    null,
+                    "",
+                    null
+                ]
+            ],
+            "number_of_columns": 11,
+            "number_of_rows": 4
+        },
+        {
+            "page": 11,
+            "table_index": 2,
+            "columns": [
+                "",
+                null
+            ],
+            "rows": [
+                [
+                    null,
+                    ""
+                ]
+            ],
+            "number_of_columns": 2,
+            "number_of_rows": 1
+        },
+        {
+            "page": 11,
+            "table_index": 3,
+            "columns": [
+                null,
+                null,
+                ""
+            ],
+            "rows": [
+                [
+                    "",
+                    null,
+                    ""
+                ],
+                [
+                    "",
+                    null,
+                    null
+                ],
+                [
+                    null,
+                    "",
+                    ""
+                ]
+            ],
+            "number_of_columns": 3,
+            "number_of_rows": 3
+        },
+        {
+            "page": 11,
+            "table_index": 4,
+            "columns": [
+                "",
+                ""
+            ],
+            "rows": [
+                [
+                    "",
+                    ""
+                ],
+                [
+                    null,
+                    ""
+                ]
+            ],
+            "number_of_columns": 2,
+            "number_of_rows": 2
+        },
+        {
+            "page": 11,
+            "table_index": 5,
+            "columns": [
+                "M",
+                "odel Registry"
+            ],
+            "rows": [
+                [
+                    "",
+                    null
+                ]
+            ],
+            "number_of_columns": 2,
+            "number_of_rows": 1
+        },
+        {
+            "page": 11,
+            "table_index": 6,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

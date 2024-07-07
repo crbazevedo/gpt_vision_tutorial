@@ -1,0 +1,24 @@
+MLOps is an expansion of DevOps
+Software Product
+Development Models
+•
+MLOps = Machine Learning Operations
+-
+Play on DevOps: Development Operations
+•
+Integrate and streamline the development of software
+and its deployment
+•
+“Agile” software development practices
+•
+Continuous Integration / Continuous Delivery (CI/CD)
+-
+Modern code version control
+-
+Enforce strict permissions on merging
+-
+Enforce appropriate sized end-to-end tests
+•
+Fun Fact: DevOps has roots from Lean Manufacturing
+practices ;)
+20 04/24/2023 Tia Miceli | Machine Learning Operations for Accelerator Control

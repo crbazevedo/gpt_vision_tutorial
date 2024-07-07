@@ -1,0 +1,15 @@
+{
+    "page_number": 1,
+    "text_path": "data/sample_documents/10.2172_1973632/page_1.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_1_img_1.png",
+            "xref": 1093,
+            "width": 4000,
+            "height": 2250,
+            "colorspace": "DeviceRGB",
+            "filter": "FlateDecode"
+        }
+    ],
+    "tables": []
+}

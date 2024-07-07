@@ -1,49 +1,70 @@
 import fitz  # PyMuPDF
+import pdfplumber
 import os
+import json
 
 def extract_objects(pdf_path, output_dir):
-    os.makedirs(output_dir, exist_ok=True)
-    doc = fitz.open(pdf_path)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    # Open the PDF with pdfplumber
+    with pdfplumber.open(pdf_path) as pdf:
+        for i, page in enumerate(pdf.pages):
+            # Extract text
+            text = page.extract_text()
+            if text:
+                with open(os.path.join(output_dir, f'page_{i+1}.txt'), 'w') as text_file:
+                    text_file.write(text)
+            
+            # Extract tables
+            tables = page.extract_tables()
+            tables_data = []
+            for table_index, table in enumerate(tables):
+                table_data = {
+                    "page": i + 1,
+                    "table_index": table_index + 1,
+                    "columns": table[0],
+                    "rows": table[1:],
+                    "number_of_columns": len(table[0]),
+                    "number_of_rows": len(table) - 1
+                }
+                tables_data.append(table_data)
+                table_json_path = os.path.join(output_dir, f'tables_page_{i+1}_table_{table_index+1}.json')
+                with open(table_json_path, 'w') as table_file:
+                    json.dump(table_data, table_file, indent=4)
+            
+            # Open the same page with fitz for image extraction
+            doc = fitz.open(pdf_path)
+            fitz_page = doc.load_page(i)
+            images = fitz_page.get_images(full=True)
+            image_data = []
+            for img_index, img in enumerate(images):
+                xref = img[0]
+                base_image = doc.extract_image(xref)
+                image_bytes = base_image["image"]
 
-    for page_num in range(len(doc)):
-        page = doc.load_page(page_num)
-        images = page.get_images(full=True)
+                # Save the image using the extracted image bytes
+                img_path = os.path.join(output_dir, f"page_{i+1}_img_{img_index + 1}.png")
+                with open(img_path, "wb") as img_file:
+                    img_file.write(image_bytes)
+                
+                image_data.append({
+                    "image_path": img_path,
+                    "xref": xref,
+                    "width": base_image.get("width"),
+                    "height": base_image.get("height"),
+                    "colorspace": img[5],
+                    "filter": img[8]
+                })
 
-        for img_index, img in enumerate(images):
-            print(f"Image {img_index}: {img}")  # Print the img variable to see its content
-            print(f"xref: {img[0]}")
-            print(f"smask: {img[1]}")
-            print(f"width: {img[2]}")
-            print(f"height: {img[3]}")
-            print(f"bpc: {img[4]}")
-            print(f"colorspace: {img[5]}")
-            print(f"alt_colorspace: {img[6]}")
-            print(f"name: {img[7]}")
-            print(f"filter: {img[8]}")
-            print(f"dpi: {img[9]}")
+            # Save metadata for the page
+            page_metadata_path = os.path.join(output_dir, f"page_{i+1}_metadata.json")
+            page_metadata = {
+                "page_number": i + 1,
+                "text_path": os.path.join(output_dir, f'page_{i+1}.txt') if text else None,
+                "images": image_data,
+                "tables": tables_data
+            }
+            with open(page_metadata_path, 'w') as meta_file:
+                json.dump(page_metadata, meta_file, indent=4)
 
-            try:
-                x0 = 0
-                y0 = 0
-                x1 = float(img[2])  # width
-                y1 = float(img[3])  # height
-            except ValueError as e:
-                print(f"Skipping image {img_index} due to ValueError: {e}")
-                continue  # Skip this image if it has non-numeric coordinates
-
-            bbox = fitz.Rect(x0, y0, x1, y1)
-            if bbox.is_empty:
-                continue
-
-            xref = img[0]
-            base_image = doc.extract_image(xref)
-            image_bytes = base_image["image"]
-
-            # Save the image using the extracted image bytes
-            img_path = os.path.join(output_dir, f"page_{page_num + 1}_img_{img_index + 1}.png")
-            with open(img_path, "wb") as img_file:
-                img_file.write(image_bytes)
-
-            print(f"Extracted image: {img_path}")
-
-    doc.close()

@@ -1,0 +1,53 @@
+{
+    "page_number": 5,
+    "text_path": "data/sample_documents/10.2172_1973632/page_5.txt",
+    "images": [],
+    "tables": [
+        {
+            "page": 5,
+            "table_index": 1,
+            "columns": [
+                "Issue",
+                "Mitigating Best Practice"
+            ],
+            "rows": [
+                [
+                    "Weights are a little different",
+                    "Some variation expected if training in parallel and on variety of hardware.\nCheck within tolerance."
+                ],
+                [
+                    "Weights are so different that model\npredictions are very different.",
+                    "Training is getting stuck in local minima. A variety of training schema and\nhyper parameters and optimizers should be tried."
+                ],
+                [
+                    "Human mishandling, hard to detect",
+                    "As model\u2019s code is version controlled, also version control model\u2019s\nperformance so that performance results don\u2019t get mixed up."
+                ],
+                [
+                    "Different datasets give different\nweights",
+                    "This is to be expected within some tolerance. Just as model code is\nversion controlled, train/val/test datasets should be version controlled."
+                ],
+                [
+                    "Works for me, but not for you",
+                    "Environment needs to be version controlled! (Packages and versions)"
+                ]
+            ],
+            "number_of_columns": 2,
+            "number_of_rows": 5
+        },
+        {
+            "page": 5,
+            "table_index": 2,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

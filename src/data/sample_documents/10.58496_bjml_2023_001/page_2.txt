@@ -1,0 +1,28 @@
+2 Alsajri, Babylonian Journal of Machine Learning Vol.2023, 1–6
+2. TYPES OF MACHINE LEARNING TECHNIQUES
+Machine learning is a field of artificial intelligence that enables computers to learn and improve from experience without
+being explicitly programmed. There are several different types of machine learning techniques that are commonly used [3].
+These techniques can be broadly categorized into three main types [4]:
+1. Supervised learning : The computer is presented with labeled example inputs and their desired outputs. The goal
+is to build a model that learns these input-output mappings so it can predict the output when presented with new
+inputs. Examples of supervised learning algorithms include linear regression, logistic regression, neural networks,
+and support vector machines [3].
+2. Unsupervised learning : In this type of learning, the model is provided with inputs but no labeled responses. It
+tries to find hidden patterns and relationships in the data on its own. Cluster analysis, anomaly detection, and
+association rule learning are examples of commonly used unsupervised learning techniques [4].
+3. Reinforcement learning : Here the model learns by interacting dynamically with its environment. The model is
+provided feedback in terms of rewards and punishments as it navigates its problem space. It tries maximizing its
+cumulative reward through trial and error. Common applications include video games, robotics, and autonomous
+driving systems [3].
+4. Semi-supervised learning : is a technique that combines supervised and unsupervised machine learning, where
+the algorithm is trained on a small amount of labeled data and a large amount of unlabeled data [5]. The goal of
+semi-supervised learning is to understand the structure of the distribution of data by exploiting unlabeled data in
+addition to labeled data. Typically, labeled datasets are small, expensive, or time-consuming to produce, while
+acquiring new unlabeled data is relatively inexpensive and easy [4]. Semi-supervised learning allows for improved
+model accuracy by using this readily available unlabeled data, under the assumption that data points with similar
+properties are likely of the same class.
+In summary, machine learning approaches can be divided into supervised learning for mapping inputs to outputs based on
+example input-output pairs, unsupervised learning to uncover patterns and relationships in unlabeled data, and reinforcement
+learning for agents interacting with dynamic environments while maximizing rewards. The type of technique selected
+depends on factors like data availability, problem complexity, and desired outcomes.
+Fig. 1. World wide trend analysis on machine learning techniques

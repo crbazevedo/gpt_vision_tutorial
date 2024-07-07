@@ -1,0 +1,21 @@
+{
+    "page_number": 21,
+    "text_path": "data/sample_documents/10.2172_1973632/page_21.txt",
+    "images": [],
+    "tables": [
+        {
+            "page": 21,
+            "table_index": 1,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "page_number": 20,
+    "text_path": "data/sample_documents/10.2172_1973632/page_20.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_20_img_1.png",
+            "xref": 58,
+            "width": 600,
+            "height": 800,
+            "colorspace": "ICCBased",
+            "filter": "FlateDecode"
+        }
+    ],
+    "tables": [
+        {
+            "page": 20,
+            "table_index": 1,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

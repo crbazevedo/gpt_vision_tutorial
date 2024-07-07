@@ -1,1 +1,52 @@
-{"Title": "Machine Learning Basics: A Comprehensive Guide. A Review", "Authors": ["Alok Singh Chauhan", "H Mary Henrietta"], "Institutions": ["School of Computer Applications and Technology, Galgotias University, Greater Noida, India", "Saveetha Engineering College, Chennai, Tamil Nadu 602105, India"], "Number of Pages": 4, "Number of Images": 3, "Number of Tables": 0, "Image Captions": ["A screenshot of the title and authors of a review article on machine learning on a journal page.", "Fig.1. Machine Learning Basics", "Machine Learning in Depth"], "Table Descriptions": [], "Page Summaries": ["This page features a review article titled 'Machine Learning Basics: A Comprehensive Guide. A Review' published in the Babylonian Journal of Machine Learning. It is authored by Alok Singh Chauhan and H Mary Henrietta, affiliated with Galgotias University and Saveetha Engineering College respectively. The abstract highlights the increasing importance of machine learning in diverse fields and the comprehensive nature of Dr. Jane Doe's guidebook. The introduction emphasizes the comprehensive and inclusive approach of the guide and its structure. The page also provides article information such as submission, acceptance, and publication dates.", "This page provides an overview of Dr. Jane Doe's guide on machine learning. The guide is structured to facilitate understanding, progressively advancing from fundamental concepts to intricate machine learning techniques. It includes concrete illustrations, interactive activities, and practical applications to enhance learning. The use of widely-used programming languages, especially Python, is highlighted to connect theoretical knowledge with practical implementation. This comprehensive guide covers a wide range of topics in machine learning, from traditional models like linear regression to state-of-the-art deep learning techniques, ensuring that learners gain both knowledge and practical skills for real-life situations.", "This page discusses the practical relevance and ethical considerations of Dr. Jane Doe's comprehensive guide on machine learning. It highlights the guide's use of real-world scenarios and interactive learning strategies to make complex theoretical concepts more understandable and applicable. Additionally, it acknowledges the guide's inclusion of ethical considerations, focusing on the broader societal implications of machine learning.", "This page in the Babylonian Journal of Machine Learning volume 2023, written by J. Doe, discusses the ethical considerations in machine learning applications. It emphasizes the importance of fostering critical thinking and awareness of the societal impact of technology, and highlights the need for ethical responsibility among machine learning practitioners. The handbook referenced serves as a guide to incorporate ethical issues into decision-making processes in machine learning, providing practical tools and frameworks. The conclusion reiterates the handbook's significance in promoting a conscientious approach to AI methodologies. The author discloses the absence of conflicts of interest, highlights the lack of external funding, and expresses gratitude towards their supporting institution."]}
+{
+    "Title": "Machine Learning Basics: A Comprehensive Guide. A Review",
+    "Authors": [
+        "Alok Singh Chauhan",
+        "H Mary Henrietta"
+    ],
+    "Institutions": [
+        "School of Computer Applications and Technology, Galgotias University, Greater Noida, India",
+        "Saveetha Engineering College, Chennai, Tamil Nadu 602105, India"
+    ],
+    "Number of Pages": 4,
+    "Number of Images": 2,
+    "Number of Tables": 0,
+    "Image Captions": [
+        "Machine Learning Basics",
+        "Fig. 2. Machine Learning in Depth"
+    ],
+    "Table Descriptions": [],
+    "Page Summaries": [
+        "This page is a review article from the Babylonian Journal of Machine Learning, discussing 'Machine Learning Basics: A Comprehensive Guide.' The review, authored by Alok Singh Chauhan and H Mary Henrietta, provides an in-depth examination of a handbook by Dr. Jane Doe. The article covers the importance, structure, and pedagogy of the guide, aiming to help readers at different levels of proficiency understand the intricate details of machine learning. The review highlights the foundational concepts and the strategic focus of the handbook on making machine learning knowledge accessible and engaging for all learners.",
+        "The page discusses the detailed and structured framework presented by Dr. Doe in a machine learning guide, highlighting the incorporation of practical examples, widely-used programming languages, and pedagogical techniques that enhance learning. The guide provides a comprehensive exploration of machine learning algorithms, ensuring learners gain knowledge and practical abilities applicable to real-world scenarios. The emphasis is on making informed decisions by using a wide range of algorithms, with a focus on both traditional models and state-of-the-art techniques in deep learning.",
+        "This page from the Babylonian Journal of Machine Learning highlights the practical relevance of machine learning and the ethical considerations in its application. It emphasizes the practical implementation of machine learning concepts in real-world scenarios and the comprehensive inclusion of examples and coding exercises. Dr. Jane Doe's guide is recognized for its thorough examination of specific algorithms, practical illustrations from various fields, and progressive inclusion of ethical considerations in machine learning education.",
+        null
+    ],
+    "extractedImages": [
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_2_img_1.png",
+            "page": 2
+        },
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_3_img_1.png",
+            "page": 3
+        },
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_1_img_4.png",
+            "page": 1
+        },
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_1_img_1.png",
+            "page": 1
+        },
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_1_img_3.png",
+            "page": 1
+        },
+        {
+            "file": "data/sample_documents/10.58496_bjml_2023_006/page_1_img_2.png",
+            "page": 1
+        }
+    ],
+    "extractedTables": []
+}

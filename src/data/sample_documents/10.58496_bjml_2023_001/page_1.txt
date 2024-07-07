@@ -1,0 +1,49 @@
+Babylonian Journal of Machine Learning
+Vol.2023, pp. 1–6
+DOI: https://doi.org/10.58496/BJML/2023/001; ISSN: xxxxx
+https://mesopotamian.press/journals/index.php/BJML
+Review Article
+A Review on Machine Learning Strategies for Real-World Engineering Applications
+Abdulazeez Khlaif Shathir
+Alsajri1,*,
+1
+University Arts, Sciences and Technology, Computer Science Department, Beirut, Lebanon.
+A R T I C L E I N F O A B S T R A C T
+Article History
+Received 24 Oct 2022 As we enter the Industry 5.0 era, enormous volumes of data are being created across digital systems.
+Accepted 27 Dec 2022 Machine learning techniques have recently achieved immense success in areas such as intelligent control,
+Published 15 Jan 2023
+decision-making, speech recognition, natural language processing, computer graphics, and computer
+vision. This despite the significant challenge of analyzing and interpreting massive datasets. Owing to
+Keywords
+their strong performance, deep learning and machine learning algorithms have become widely deployed
+Machine learning
+across various real-time engineering applications. Developing working knowledge of machine learning
+Real-time Engineering
+is now critical for building automated, smart systems that can process data in domains like healthcare,
+Intelligent tutoring systems cybersecurity, and intelligent transportation. There exist multiple strategies in machine learning,
+Supervised learning including reinforcement learning, semi-supervised learning, unsupervised learning, and supervised
+Unsupervised learning learning algorithms. This research provides a comprehensive examination of leveraging machine
+learning for managing real-time engineering systems, with the goal of augmenting their capabilities and
+intelligence. It contributes to the understanding of how different machine learning approaches can be
+applied in real-world use cases like cybersecurity, healthcare, and intelligent transportation. Additionally,
+it highlights ongoing research objectives and difficulties that machine learning techniques encounter
+while tackling real-world systems. This research serves both industry professionals and academics as a
+reference, while technically benchmarking decision-making across different application areas and real-
+world scenarios.
+1. INTRODUCTION
+In the digital era, large volumes of data are being generated from real-time engineering applications. This data presents
+opportunities to build intelligent systems by applying machine learning techniques to extract insights. Machine learning is
+growing in popularity across areas like reinforcement learning, unsupervised learning, semi-supervised learning, and
+supervised learning. [1]
+Machine learning allows applications to learn from data instead of needing explicit programming. It is a key technology
+enabling automation and enhancement of systems in industry 4.0. The choice of machine learning algorithm impacts
+outcomes and depends on factors like the nature of the data and problem being solved. [2]
+This text aims to provide a comprehensive study on applying machine learning to real-time engineering applications. It can
+serve as a reference guide for industry and academia on how different machine learning techniques can be used to build
+effective, data-driven intelligent systems. Both classical machine learning and deep learning methods are considered across
+areas including clustering, classification, regression, and more.[2]
+In summary, with large volumes of data available, there is great potential for machine learning to enable smart, self-learning
+systems across real-time engineering application areas. This text surveys machine learning techniques suited for this purpose
+as a reference manual for building these intelligent data-processing applications.
+*Corresponding author. Email: aka104@live.aul.edu.lb

@@ -1,0 +1,39 @@
+{
+    "page_number": 1,
+    "text_path": "data/sample_documents/10.58496_bjml_2023_001/page_1.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_1_img_1.png",
+            "xref": 12,
+            "width": 150,
+            "height": 150,
+            "colorspace": "DeviceRGB",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_1_img_2.png",
+            "xref": 23,
+            "width": 33,
+            "height": 33,
+            "colorspace": "DeviceRGB",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_1_img_3.png",
+            "xref": 26,
+            "width": 88,
+            "height": 31,
+            "colorspace": "DeviceRGB",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_1_img_4.png",
+            "xref": 29,
+            "width": 161,
+            "height": 154,
+            "colorspace": "DeviceRGB",
+            "filter": "DCTDecode"
+        }
+    ],
+    "tables": []
+}

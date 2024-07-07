@@ -12,10 +12,14 @@ def process_pdfs(input_dir, output_dir):
         if pdf_file.endswith('.pdf'):
             pdf_path = os.path.join(input_dir, pdf_file)
             metadata = extract_metadata(pdf_path)
-            with open(os.path.join(output_dir, f'{pdf_file[:-4]}_metadata.json'), 'w') as meta_file:
+            metadata_path = os.path.join(output_dir, f'{pdf_file[:-4]}_metadata.json')
+            with open(metadata_path, 'w') as meta_file:
                 json.dump(metadata, meta_file)
             
             extract_objects(pdf_path, os.path.join(output_dir, pdf_file[:-4]))
+            
+            # Index the extracted objects and update the metadata
+            index_objects(os.path.join(output_dir, pdf_file[:-4]), metadata_path)
 
 def main(query, max_results, start_date, end_date, email, skip_download):
     download_dir = 'data/sample_documents'

@@ -1,0 +1,46 @@
+{
+    "page_number": 24,
+    "text_path": "data/sample_documents/10.2172_1973632/page_24.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_24_img_1.png",
+            "xref": 102,
+            "width": 1744,
+            "height": 2466,
+            "colorspace": "ICCBased",
+            "filter": "DCTDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_24_img_2.png",
+            "xref": 104,
+            "width": 1787,
+            "height": 178,
+            "colorspace": "Indexed",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_24_img_3.png",
+            "xref": 106,
+            "width": 315,
+            "height": 57,
+            "colorspace": "ICCBased",
+            "filter": "DCTDecode"
+        }
+    ],
+    "tables": [
+        {
+            "page": 24,
+            "table_index": 1,
+            "columns": [
+                "4th ICFA Beam Dynamics Mini-Workshop on\nMachine Learning Applications\nfor Particle Accelerators\n5 \u2013 8 March 2024\nGyeongju, Republic of Korea\n\uc0ac\uc9c4\uc81c\uacf5(\uad8c\ubbf8\uc815) \u2013 \uacbd\uc8fc\uc2dc \uad00\uad11\uc790\uc6d0 \uc601\uc0c1\uc774\ubbf8\uc9c0\nwww.indico.kr/e/ml2024/"
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}

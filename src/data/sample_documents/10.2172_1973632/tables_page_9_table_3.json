@@ -1,0 +1,24 @@
+{
+    "page": 9,
+    "table_index": 3,
+    "columns": [
+        "Standardized accel. data\nlogger & filter.\nStandardized format.\nInterface for ML Engineer: data\nfilter.\nDataset Management System",
+        null
+    ],
+    "rows": [
+        [
+            null,
+            "ter.\nataset Management Syste"
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            null,
+            "Versioning\nTrack derivative datasets\nMetadata"
+        ]
+    ],
+    "number_of_columns": 2,
+    "number_of_rows": 3
+}

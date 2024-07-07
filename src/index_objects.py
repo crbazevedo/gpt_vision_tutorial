@@ -1,26 +1,61 @@
 import os
 import json
 
-def index_objects(pdf_folder, output_file):
-    index = []
+def index_objects(directory, metadata_path):
+    index = {
+        "images": [],
+        "tables": []
+    }
 
-    for root, _, files in os.walk(pdf_folder):
+    for root, _, files in os.walk(directory):
         for file in files:
-            if file.endswith(".png") or file.endswith(".json"):
-                page_number = int(file.split('_')[2])
-                object_type = "image" if file.endswith(".png") else "table"
-                index.append({
-                    "file_name": os.path.basename(root),
-                    "page_number": page_number,
-                    "object_type": object_type,
-                    "object_reference": file,
-                    "caption": None  # Captions can be added if extracted
-                })
+            if file.endswith('.png'):
+                parts = file.split('_')
+                if len(parts) >= 3 and parts[0] == 'page':
+                    try:
+                        page_number = int(parts[1])
+                        index["images"].append({
+                            "file": os.path.join(root, file),
+                            "page": page_number
+                        })
+                    except ValueError:
+                        print(f"Skipping file {file} due to unexpected filename format")
+            elif file.endswith('.json'):
+                parts = file.split('_')
+                if len(parts) == 3 and parts[0] == 'tables' and parts[1].startswith('page'):
+                    try:
+                        page_number = int(parts[1].replace('page', '').replace('.json', ''))
+                        table_number = int(parts[2].replace('table', '').replace('.json', ''))
+                        with open(os.path.join(root, file), 'r') as table_file:
+                            table_content = json.load(table_file)
+                        index["tables"].append({
+                            "file": os.path.join(root, file),
+                            "page": page_number,
+                            "table": table_number,
+                            "content": table_content
+                        })
+                    except (ValueError, json.JSONDecodeError) as e:
+                        print(f"Skipping file {file} due to error: {e}")
+                elif len(parts) == 2 and parts[0] == 'tables' and parts[1].startswith('page'):
+                    try:
+                        page_number = int(parts[1].replace('page', '').replace('.json', ''))
+                        with open(os.path.join(root, file), 'r') as table_file:
+                            table_content = json.load(table_file)
+                        index["tables"].append({
+                            "file": os.path.join(root, file),
+                            "page": page_number,
+                            "table": None,
+                            "content": table_content
+                        })
+                    except (ValueError, json.JSONDecodeError) as e:
+                        print(f"Skipping file {file} due to error: {e}")
 
-    with open(output_file, 'w') as f:
-        json.dump(index, f, indent=4)
+    with open(metadata_path, 'r') as f:
+        metadata = json.load(f)
 
-if __name__ == "__main__":
-    pdf_folder = "data/sample_documents"
-    output_file = "data/index.json"
-    index_objects(pdf_folder, output_file)
+    metadata["extractedImages"] = index["images"]
+    metadata["extractedTables"] = index["tables"]
+
+    with open(metadata_path, 'w') as f:
+        json.dump(metadata, f, indent=4)
+

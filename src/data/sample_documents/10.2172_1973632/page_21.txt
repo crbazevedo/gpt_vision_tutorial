@@ -1,0 +1,34 @@
+Infrastructure required for accelerator controls MLOps
+Data Management Model Development Operations Dev. System Operations
+• • • •
+Standardized accel. Use Common Tools Interfaces for ML Server with proper
+•
+data logger & filter. Model Development Engineer: specifications
+• Standardized format. System - Getting “live data“ • Monitoring services
+• Interface for ML - ~MLFlow / hyper p. tune - Setting “actions” • Control services
+- VC: model with - Monitoring input, model •
+Engineer: data filter. (Logging services)
+predictions/performance
+references to env., data,
+• •
+Dataset Management Automate deployment
+•
+Model Registry
+results
+System of model assets from
+- All data, env., model, and
+- Versioning Model Registry
+performance assets
+- Track derivative datasets
+- Metadata
+Common Tools
+•
+Advanced version control (strict permissions,
+•
+Container environments, “code as infrastructure”
+integration tests, access to GPU if needed)
+•
+Shared libraries and best practices
+•
+Shared compute CPU & GPU
+21 04/24/2023 Tia Miceli | Machine Learning Operations for Accelerator Control

@@ -1,0 +1,15 @@
+{
+    "page_number": 2,
+    "text_path": "data/sample_documents/10.58496_bjml_2023_001/page_2.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_2_img_1.png",
+            "xref": 46,
+            "width": 778,
+            "height": 370,
+            "colorspace": "DeviceRGB",
+            "filter": "DCTDecode"
+        }
+    ],
+    "tables": []
+}

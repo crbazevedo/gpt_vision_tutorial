@@ -1,0 +1,15 @@
+Workflow for MLOps
+• Standardized accel. data • Use Common Tools • Interfaces for ML Engineer: • Server with proper
+logger & filter. • Model Development System • Getting “live data“ specifications
+• Standardized format. • ~MLFlow / hyper p. tune • Setting “actions” • Monitoring services
+• Interface for ML Engineer: data • VC: model with references to • Monitoring input, model • Control services
+env., data, results predictions/performance
+filter. • (Logging services)
+• Model Registry
+• Dataset Management System • Automate deployment of model
+• All data, env., model, and
+• Versioning assets from Model Registry
+performance assets
+• Track derivative datasets
+• Metadata
+12 04/24/2023 Tia Miceli | Machine Learning Operations for Accelerator Control

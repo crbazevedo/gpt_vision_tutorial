@@ -1,0 +1,73 @@
+{
+    "page": 12,
+    "table_index": 1,
+    "columns": [
+        "",
+        null,
+        "",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        ""
+    ],
+    "rows": [
+        [
+            null,
+            null,
+            null,
+            "",
+            null,
+            "",
+            null,
+            "",
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "",
+            ""
+        ],
+        [
+            null,
+            null,
+            null,
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            null
+        ],
+        [
+            null,
+            "",
+            null,
+            "",
+            null,
+            "",
+            null,
+            "",
+            null,
+            "",
+            null
+        ]
+    ],
+    "number_of_columns": 11,
+    "number_of_rows": 4
+}

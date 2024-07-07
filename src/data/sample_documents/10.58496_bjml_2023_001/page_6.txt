@@ -1,0 +1,21 @@
+6 Alsajri, Babylonian Journal of Machine Learning Vol.2023, 1–6
+[4] S. Raschka, "Types of Machine Learning Algorithms You Should Know," Towards Data Science, 2022. [Online].
+Available: https://towardsdatascience.com/types-of-machine-learning-algorithms-you-should-know-953a08248861
+[5] O. Chapelle, B. Scholkopf and A. Zien, "Semi-Supervised Learning," 2009. [Online]. Available:
+https://www.cs.umd.edu/~sen/lbc-proj/LBC.html
+[6] R. Nkambou, R. Mizoguchi and J. Bourdeau, Advances in intelligent tutoring systems. Springer Science & Business
+Media, 2010.
+[7] K. K. Martha and K. S. Santosh, “Machine learning applications in intelligent tutoring systems,” Aweshkar Res. J.,
+vol. 31, no. 1, pp. 108-133, 2022.
+[8] R. Miotto, F. Wang, S. Wang, X. Jiang and J. T. Dudley, “Deep learning for healthcare: review, opportunities and
+challenges,” Briefings Bioinformatics, vol. 19, no. 6, pp. 1236-1246, Nov. 2017.
+[9] D. Ravi et al., “Deep Learning for Health Informatics,” IEEE J. Biomedical Health Informatics, vol. 21, no. 1, pp. 4-
+21, Jan. 2017.
+[10] J. Shen et al., “Artificial intelligence versus clinicians in disease diagnosis: systematic review,” JMIR Med.
+Informatics, vol. 5, no. 4, p. e40, 2017.
+[11] S. Amershi et al., "Software engineering for machine learning: A case study," in Proc. 41st Int. Conf. Software
+Engineering: Software Engineering Practice, IEEE, 2019, pp. 291-300.
+[12] A. B. Arrieta et al., “Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges
+toward responsible AI,” Information Fusion, vol. 58, pp. 82-115, 2020.
+[13] X. Lian et al., “Can decentralized algorithms outperform centralized algorithms? a case study for decentralized parallel
+stochastic gradient descent,” Advances Neural Inform. Process. Syst., vol. 30, 2017.

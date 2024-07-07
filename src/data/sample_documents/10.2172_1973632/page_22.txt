@@ -1,0 +1,29 @@
+Fermilab is building out our accelerator controls MLOps
+•
+Formalizing requirements for integration with current system &
+our modernized control system (ACORN 2020-2029)
+•
+Interviewing other accelerator laboratories
+-
+Collab with SLAC on LUME-Services
+-
+Discussions with CERN
+-
+Discussions with BNL
+-
+Contacts at ORNL, ANL, please reach out!
+•
+Open source Toolset R&D on Kubernetes cluster
+-
+Data management tools: Data lake, GraphQL, metadata database
+(PNNL DataHub, FNAL RUCIO, LinkedIn DataHub, Invenio)
+Learned from presentation yesterday
+- ★
+Model development tools: MLFlow, DVC
+that we will consult with Tech
+-
+Workflow tools: Airflow
+Transfer Office about licensing!
+-
+Monitoring & control services: EPICS
+22 04/24/2023 Tia Miceli | Machine Learning Operations for Accelerator Control

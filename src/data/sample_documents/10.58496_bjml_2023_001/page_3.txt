@@ -1,0 +1,21 @@
+3 Alsajri, Babylonian Journal of Machine Learning Vol.2023, 1–6
+Fig. 2. Machine learning techniques
+3. APPLICATION OF MACHINE LEARNING
+Machine learning has become one of the most popular technologies in recent years due to its powerful capabilities and
+widespread applications across industries [4]. Some of the major real-world applications of machine learning include:
+1. Computer Vision : Machine learning algorithms are used extensively in facial recognition, image classification,
+medical imaging analysis, object detection etc. Key techniques include CNNs, RNNs and reinforcement learning
+[3].
+2. Natural Language Processing : Machine translation, sentiment analysis, text generation and summarization are
+some common NLP tasks where machine learning is applied. These techniques rely on analyzing linguistic data to
+recognize speech, understand context or generate human readable content.
+3. Predictive Analytics : Machine learning models can detect patterns in data to make future outcome predictions
+across domains like risk assessment, financial forecasting, healthcare analytics, product recommendation engines
+etc [4]. Common models include regression, decision trees and random forests.
+4. Robotics and Autonomous Vehicles : The ability for machines to learn representations of the world and make
+decisions to navigate environments rely heavily on machine learning. Reinforcement learning trains robotic systems
+on how to operate based on dynamic feedback [3].
+In summary, machine learning has enabled great leaps in automation and intelligence around interpretability of image/text
+data and the ability to make data-driven forecasts and decisions in an adaptive manner. The future applications of ML are
+only bound to grow.
+Fig. 3. Applications of machine learning

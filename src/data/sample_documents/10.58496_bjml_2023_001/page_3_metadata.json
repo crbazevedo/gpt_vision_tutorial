@@ -1,0 +1,23 @@
+{
+    "page_number": 3,
+    "text_path": "data/sample_documents/10.58496_bjml_2023_001/page_3.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_3_img_1.png",
+            "xref": 49,
+            "width": 691,
+            "height": 381,
+            "colorspace": "DeviceRGB",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.58496_bjml_2023_001/page_3_img_2.png",
+            "xref": 50,
+            "width": 684,
+            "height": 364,
+            "colorspace": "DeviceRGB",
+            "filter": "DCTDecode"
+        }
+    ],
+    "tables": []
+}

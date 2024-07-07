@@ -1,0 +1,38 @@
+{
+    "page_number": 22,
+    "text_path": "data/sample_documents/10.2172_1973632/page_22.txt",
+    "images": [
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_22_img_1.png",
+            "xref": 69,
+            "width": 701,
+            "height": 410,
+            "colorspace": "ICCBased",
+            "filter": "FlateDecode"
+        },
+        {
+            "image_path": "data/sample_documents/10.2172_1973632/page_22_img_2.png",
+            "xref": 70,
+            "width": 2502,
+            "height": 1402,
+            "colorspace": "ICCBased",
+            "filter": "FlateDecode"
+        }
+    ],
+    "tables": [
+        {
+            "page": 22,
+            "table_index": 1,
+            "columns": [
+                ""
+            ],
+            "rows": [
+                [
+                    ""
+                ]
+            ],
+            "number_of_columns": 1,
+            "number_of_rows": 1
+        }
+    ]
+}
