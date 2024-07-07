@@ -6,9 +6,32 @@ This tutorial guides you through a pipeline that processes PDF documents, extrac
 
 We want to create a robust and automated solution to extract meaningful metadata from complex PDF documents. This pipeline is particularly useful for complex documents where extracting structured data manually would be time-consuming and prone to errors. Our focus is on understanding the images and tables contained in the PDFs and generating detailed metadata for them.
 
-### Use Case
+### Use Cases
 
 This pipeline is designed to help teams who frequently deal with large volumes of documents. By automating the metadata extraction process, we can save time and improve the accuracy of data extraction. The structured JSON output can be easily integrated into databases, search engines, and other tools for further analysis and retrieval.
+
+
+#### Concrete Examples
+
+1. **Q&A Systems**:
+   - **Example**: A legal firm handling large volumes of legal documents can use this pipeline to extract specific clauses, images (e.g., signatures), and tables (e.g., financial data) relevant to specific questions, enabling efficient and accurate retrieval of information.
+   - **Benefit**: This allows for quick and precise answers to client queries by retrieving individual chunks and objects relevant to the questions.
+
+2. **Academic Research**:
+   - **Example**: Researchers can process scientific papers to extract metadata, images (e.g., experimental setups), and tables (e.g., results and statistics) for quick reference and comparison.
+   - **Benefit**: Enhances literature reviews by organizing and indexing key information, making it easier to access and analyze relevant data.
+
+3. **Healthcare**:
+   - **Example**: Hospitals and clinics can extract patient information, medical images (e.g., X-rays), and tables (e.g., lab results) from medical reports.
+   - **Benefit**: Facilitates quick retrieval of patient records and relevant data, improving the efficiency of patient care and reducing the risk of errors.
+
+4. **Financial Services**:
+   - **Example**: Financial analysts can extract financial statements, charts, and tables from annual reports to analyze company performance.
+   - **Benefit**: Streamlines the process of financial analysis and reporting, allowing analysts to focus on insights rather than data extraction.
+
+5. **Engineering and Manufacturing**:
+   - **Example**: Engineers can extract diagrams, tables (e.g., material properties), and technical specifications from manuals and technical documents.
+   - **Benefit**: Improves access to critical information required for design, testing, and manufacturing processes.
 
 ### Why This is Useful
 
