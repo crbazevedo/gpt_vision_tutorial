@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz 
 import os
 
 def extract_objects(pdf_path, output_dir):
@@ -32,9 +32,3 @@ def extract_objects(pdf_path, output_dir):
             print(f"Extracted image: {img_path}")
 
     doc.close()
-
-if __name__ == "__main__":
-    pdf_path = "path_to_pdf"
-    output_dir = "output_directory"
-    extract_objects(pdf_path, output_dir)
-    
