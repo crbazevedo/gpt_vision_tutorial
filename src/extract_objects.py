@@ -15,10 +15,10 @@ def extract_objects(pdf_path, output_dir):
             base_image = doc.extract_image(xref)
             image_bytes = base_image["image"]
 
-            x0 = max(img[2], 0)
-            y0 = max(img[4], 0)
-            x1 = min(img[3], page.rect.width)
-            y1 = min(img[5], page.rect.height)
+            x0 = max(float(img[2]), 0)
+            y0 = max(float(img[4]), 0)
+            x1 = min(float(img[3]), page.rect.width)
+            y1 = min(float(img[5]), page.rect.height)
 
             bbox = fitz.Rect(x0, y0, x1, y1)
             if bbox.is_empty:

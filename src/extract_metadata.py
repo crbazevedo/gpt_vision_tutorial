@@ -15,7 +15,7 @@ def convert_pdf_to_images(pdf_path, max_size=(1024, 1024), max_file_size=20*1024
     pages = convert_from_path(pdf_path, 300)
     image_paths = []
     for i, page in enumerate(pages):
-        image_path = f"/data/sample_documents/page_{i + 1}.png"
+        image_path = f"data/sample_documents/page_{i + 1}.png"
         page.thumbnail(max_size, Image.Resampling.LANCZOS)
         
         # Save the image and check its size
