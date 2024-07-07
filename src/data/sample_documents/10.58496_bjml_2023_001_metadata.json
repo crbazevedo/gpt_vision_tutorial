@@ -1,29 +1,28 @@
 {
     "Title": "A Review on Machine Learning Strategies for Real-World Engineering Applications",
     "Authors": [
-        "Abdulazeez Khalif Shathir Alsaigh"
+        "Abdulazeez Khalif Shathir Alsajir"
     ],
     "Institutions": [
         "University Arts, Sciences and Technology, Computer Science Department, Beirut, Lebanon"
     ],
     "Number of Pages": 6,
-    "Number of Images": 5,
+    "Number of Images": 4,
     "Number of Tables": 0,
     "Image Captions": [
-        "Logo of the journal 'Babylonian Journal of Machine Learning', along with article information and DOI link.",
-        "Fig. 1. World wide trend analysis on machine learning techniques",
+        "World wide trend analysis on machine learning techniques.",
         "Fig. 2. Machine learning techniques",
         "Fig. 3. Applications of machine learning",
         "Fig. 4. Intelligent tutoring system"
     ],
     "Table Descriptions": [],
     "Page Summaries": [
-        "This page is a review article from the 'Babylonian Journal of Machine Learning' discussing various machine learning strategies for real-world engineering applications. It details the significance of machine learning in areas such as intelligent control, decision-making, speech recognition, and more. The article aims to provide a comprehensive understanding of how different machine learning approaches can be applied in real-world cases like cybersecurity, healthcare, and intelligent transportation, highlighting challenges and future prospects in this field.",
-        "This page discusses various types of machine learning techniques, including supervised learning, unsupervised learning, reinforcement learning, and semi-supervised learning. It provides a brief description of each type and examples of their common applications. The page also includes a figure showing a worldwide trend analysis on machine learning techniques.",
-        "This page discusses various applications of machine learning, including Computer Vision, Natural Language Processing, Predictive Analytics, and Robotics and Autonomous Vehicles. It highlights the key techniques and models used in each area and concludes with the significant impact of machine learning on automation and intelligence.",
-        "This page discusses recent works in real-time engineering applications focusing on Intelligent Tutoring Systems (ITS) and Machine Learning in Healthcare. It highlights the major applications and benefits of these technologies, including student modeling, feedback generation, content creation, and predictive analytics in ITS as well as precision medicine, medical imaging diagnosis, patient risk analytics, drug discovery, and virtual health assistants in healthcare.",
-        "This page discusses the current challenges and future research directions in the field of machine learning. Key concerns include explainable AI, data efficiency, ethics and fairness, security and robustness, and distributed machine learning. The page concludes with a comprehensive overview of machine learning techniques and their applications in real-time engineering systems. It also addresses conflicts of interest, funding, and acknowledgments.",
-        "This page contains a reference list for a journal article from the Babylonian Journal of Machine Learning, Vol. 2023. The references include various sources related to machine learning algorithms, their applications, and related challenges in different domains such as healthcare, educational systems, and software engineering."
+        "This page is a review article from the Babylonian Journal of Machine Learning. It explores various machine learning strategies for real-world engineering applications, discussing the impact of Industry 5.0 and the significance of data in creating intelligent systems. The review highlights different machine learning techniques, including reinforcement learning, semi-supervised learning, unsupervised learning, and supervised learning, and their roles in engineering applications. The paper aims to serve as a comprehensive reference for using machine learning to build intelligent data-processing systems across multiple real-time engineering domains.",
+        "This page from the Babylonian Journal of Machine Learning discusses different types of machine learning techniques. These techniques include supervised learning, unsupervised learning, reinforcement learning, and semi-supervised learning. Each type is briefly explained along with its applications. The page also includes a graph showing worldwide trends in the usage of these techniques.",
+        "The page discusses the applications of machine learning, highlighting its vast capabilities and practical uses in industries such as computer vision, natural language processing, predictive analytics, and robotics. It also portrays the future potential and growth of machine learning in various fields. There are two images depicting machine learning techniques and their applications.",
+        "This page discusses recent works on real-time engineering applications, focusing on intelligent tutoring systems (ITS) and machine learning in healthcare. It details the various applications of ITS, such as student modeling, feedback generation, content creation, and predictive analytics. Additionally, it explores machine learning in healthcare, covering precision medicine, medical imaging diagnosis, patient risk analytics, drug discovery, and virtual health assistants.",
+        "The page explores the challenges and future research directions in machine learning, emphasizing explainable AI, data efficiency, ethics and fairness, security and robustness, and distributed machine learning. The conclusion summarizes the comprehensive overview of machine learning techniques, their applications in real-time engineering systems, and the major challenges related to transparency, bias, privacy, security, and scalability. The text aims to inspire future research to enhance machine learning for smarter, self-learning, real-time engineering solutions. It also includes references and acknowledges the institution's support.",
+        "This page is a list of references from a journal article or paper, citing various sources about machine learning algorithms, intelligent tutoring systems, deep learning applications in healthcare, artificial intelligence in disease diagnosis, software engineering for machine learning, explainable artificial intelligence, and decentralized algorithms. It highlights key publications and research work in these domains."
     ],
     "extractedImages": [
         {

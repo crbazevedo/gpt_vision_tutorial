@@ -9,18 +9,19 @@
         "Saveetha Engineering College, Chennai, Tamil Nadu 602105, India"
     ],
     "Number of Pages": 4,
-    "Number of Images": 2,
+    "Number of Images": 3,
     "Number of Tables": 0,
     "Image Captions": [
-        "Machine Learning Basics",
-        "Fig. 2. Machine Learning in Depth"
+        "Top section of the article page showing publication metadata and article title.",
+        "Fig.1. Machine Learning Basics",
+        "A detailed diagram categorizing different machine learning approaches, including supervised, unsupervised, semi-supervised, and reinforcement learning."
     ],
     "Table Descriptions": [],
     "Page Summaries": [
-        "This page is a review article from the Babylonian Journal of Machine Learning, discussing 'Machine Learning Basics: A Comprehensive Guide.' The review, authored by Alok Singh Chauhan and H Mary Henrietta, provides an in-depth examination of a handbook by Dr. Jane Doe. The article covers the importance, structure, and pedagogy of the guide, aiming to help readers at different levels of proficiency understand the intricate details of machine learning. The review highlights the foundational concepts and the strategic focus of the handbook on making machine learning knowledge accessible and engaging for all learners.",
-        "The page discusses the detailed and structured framework presented by Dr. Doe in a machine learning guide, highlighting the incorporation of practical examples, widely-used programming languages, and pedagogical techniques that enhance learning. The guide provides a comprehensive exploration of machine learning algorithms, ensuring learners gain knowledge and practical abilities applicable to real-world scenarios. The emphasis is on making informed decisions by using a wide range of algorithms, with a focus on both traditional models and state-of-the-art techniques in deep learning.",
-        "This page from the Babylonian Journal of Machine Learning highlights the practical relevance of machine learning and the ethical considerations in its application. It emphasizes the practical implementation of machine learning concepts in real-world scenarios and the comprehensive inclusion of examples and coding exercises. Dr. Jane Doe's guide is recognized for its thorough examination of specific algorithms, practical illustrations from various fields, and progressive inclusion of ethical considerations in machine learning education.",
-        null
+        "This page is a review article published in the 'Babylonian Journal of Machine Learning,' providing an overview of the book 'Machine Learning Basics: A Comprehensive Guide' written by Dr. Jane Doe. The review highlights the book's effectiveness in introducing and structuring the fundamental principles of machine learning, catering to various levels of expertise. It discusses the book's sections on the principles of machine learning, the importance of a strong foundational knowledge, and the strategic focus on making learning inclusive and accessible.",
+        "The page is an excerpt from the Babylonian Journal of Machine Learning, Vol. 2023, pages 31\u201334. It discusses the lucid and consistent framework of Dr. Jane Doe's guide on machine learning. The guide is praised for its systematic approach to learning, incorporating fundamental ideas to more detailed machine learning techniques. It emphasizes the use of widely-used programming languages, particularly Python, to enhance the practical learning experience. The text commends the guide's thorough coverage of machine learning algorithms, including traditional models and state-of-the-art deep learning techniques. The guide also discusses the importance of algorithmic selection in practical situations.",
+        "This page emphasizes the practical relevance and ethical considerations in the field of machine learning as discussed in a guide by Dr. Jane Doe. The guide highlights the importance of bridging theoretical knowledge with real-world applications, offering illustrations from various fields such as finance, healthcare, and technology. Additionally, the guide stresses ethical issues such as bias and justice, advocating for a comprehensive understanding of machine learning's societal impact.",
+        "The page summarizes the ethical considerations and practical approaches in machine learning applications as discussed by Dr. Jane Doe in her book, 'Machine Learning Basics: A Comprehensive Guide'. The book emphasizes the importance of ethical reasoning in machine learning, promoting critical thinking about algorithmic bias, justice, and social impacts. A conclusion solidifies the book's significance in providing a balanced approach to machine learning for both technical and ethical competency. The conflicts of interest, funding details, acknowledgments, and references to other works in the field are also listed."
     ],
     "extractedImages": [
         {
