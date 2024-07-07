@@ -15,7 +15,7 @@ def convert_pdf_to_images(pdf_path, max_size=(1024, 1024), max_file_size=20*1024
     pages = convert_from_path(pdf_path, 300)
     image_paths = []
     for i, page in enumerate(pages):
-        image_path = f"page_{i + 1}.png"
+        image_path = f"/data/sample_documents/page_{i + 1}.png"
         page.thumbnail(max_size, Image.Resampling.LANCZOS)
         
         # Save the image and check its size
@@ -124,11 +124,3 @@ def extract_metadata(pdf_path):
     print(f"Final metadata: {final_metadata}")
     return final_metadata
 
-if __name__ == "__main__":
-    pdf_path = "path_to_pdf"
-    metadata = extract_metadata(pdf_path)
-    with open("metadata.json", "w") as f:
-        f.write("{\n")
-        for key, value in metadata.items():
-            f.write(f'  "{key}": {json.dumps(value)},\n')
-        f.write("}\n")
