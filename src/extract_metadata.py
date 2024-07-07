@@ -128,4 +128,7 @@ if __name__ == "__main__":
     pdf_path = "path_to_pdf"
     metadata = extract_metadata(pdf_path)
     with open("metadata.json", "w") as f:
-        json.dump(metadata, f, indent=4)
+        f.write("{\n")
+        for key, value in metadata.items():
+            f.write(f'  "{key}": {json.dumps(value)},\n')
+        f.write("}\n")
