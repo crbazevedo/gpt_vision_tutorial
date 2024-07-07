@@ -1,0 +1,19 @@
+How do you serve an AI controller model?
+•
+We could just throw it on the machine and hope for the best!
+•
+Scary reasons not to do that:
+-
+Data drift (incoming data is different from what the model was trained to do)
+•
+[other side: model performs poorly]
+-
+Stuff stops working and the accelerator operators throw away your “solution”
+•
+MLOps can help!
+-
+Ok, so how do I know if this bad stuff happens? Data & performance monitoring! Alarming!
+-
+What do I do when this happens? Trigger workflows! Automate retraining! Deploy updated
+model!
+6 04/24/2023 Tia Miceli | Machine Learning Operations for Accelerator Control

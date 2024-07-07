@@ -1,0 +1,19 @@
+“The Reproducibility Problem” (in AI / ML)
+•
+“I am able to train a model once, but I / someone else can’t reproduce the
+same model weights again.”
+Issue Mitigating Best Practice
+Some variation expected if training in parallel and on variety of hardware.
+Weights are a little different
+Check within tolerance.
+Weights are so different that model Training is getting stuck in local minima. A variety of training schema and
+predictions are very different. hyper parameters and optimizers should be tried.
+As model’s code is version controlled, also version control model’s
+Human mishandling, hard to detect
+performance so that performance results don’t get mixed up.
+Different datasets give different This is to be expected within some tolerance. Just as model code is
+weights version controlled, train/val/test datasets should be version controlled.
+Works for me, but not for you Environment needs to be version controlled! (Packages and versions)
+5 10/18/2022 Tia Miceli | Sustainable Implementation of Machine Learning for Particle Accelerators
+lacipyT
+ykcirT

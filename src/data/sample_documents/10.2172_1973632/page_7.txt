@@ -1,0 +1,19 @@
+Machine Learning Operations (MLOps)
+•
+Deploying an AI/ML capability for operations requires more than data science
+(i.e. data discovery, labeling, and AI/ML model building).
+•
+Deploying an AI/ML capability requires further engineering & stewardship:
+-
+Live-streaming / live-batched-streaming data ingestion and transformation
+-
+Model inference serving
+-
+Prediction streaming
+•
+Logging
+•
+Monitoring / triggering alarms
+•
+Automating actions
+7 10/18/2022 Tia Miceli | Sustainable Implementation of Machine Learning for Particle Accelerators

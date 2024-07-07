@@ -1,0 +1,20 @@
+Why you need a sustainable way of developing, deploying, monitoring, and
+servicing ML applications (for accelerators)
+•
+The only person that knew anything
+(cid:15482)
+need self-documenting procedures
+about application / model / code leaves
+•
+The “reproducibility problem” in deep
+need advanced and
+(cid:15482)
+learning
+automated “bookkeeping”
+•
+Life-cycle handling: is it still doing the
+(cid:15482)
+need to automate common updates
+right thing? If not, what does an
+accelerator operator do at 3 A.M.?
+3 10/18/2022 Tia Miceli | Sustainable Implementation of Machine Learning for Particle Accelerators

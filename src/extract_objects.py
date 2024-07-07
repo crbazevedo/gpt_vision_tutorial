@@ -1,25 +1,37 @@
 import fitz  # PyMuPDF
-import pdfplumber
 import os
-import json
 
 def extract_objects(pdf_path, output_dir):
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-    
-    with pdfplumber.open(pdf_path) as pdf:
-        for i, page in enumerate(pdf.pages):
-            text = page.extract_text()
-            with open(os.path.join(output_dir, f'page_{i+1}.txt'), 'w') as text_file:
-                text_file.write(text)
-            
-            tables = page.extract_tables()
-            with open(os.path.join(output_dir, f'tables_page_{i+1}.json'), 'w') as table_file:
-                json.dump(tables, table_file)
-            
-            for j, img in enumerate(page.images):
-                img_obj = page.within_bbox((img["x0"], img["top"], img["x1"], img["bottom"])).to_image()
-                img_obj.save(os.path.join(output_dir, f'image_page_{i+1}_{j+1}.png'))
+    os.makedirs(output_dir, exist_ok=True)
+    doc = fitz.open(pdf_path)
+
+    for page_num in range(len(doc)):
+        page = doc.load_page(page_num)
+        images = page.get_images(full=True)
+
+        for img_index, img in enumerate(images):
+            # img is a tuple, so extract the correct indices
+            xref = img[0]
+            base_image = doc.extract_image(xref)
+            image_bytes = base_image["image"]
+
+            x0 = max(img[2], 0)
+            y0 = max(img[4], 0)
+            x1 = min(img[3], page.rect.width)
+            y1 = min(img[5], page.rect.height)
+
+            bbox = fitz.Rect(x0, y0, x1, y1)
+            if bbox.is_empty:
+                continue
+
+            # Save the image using the extracted image bytes
+            img_path = os.path.join(output_dir, f"page_{page_num + 1}_img_{img_index + 1}.png")
+            with open(img_path, "wb") as img_file:
+                img_file.write(image_bytes)
+
+            print(f"Extracted image: {img_path}")
+
+    doc.close()
 
 if __name__ == "__main__":
     pdf_path = "path_to_pdf"

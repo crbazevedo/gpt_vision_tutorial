@@ -1,4 +1,5 @@
 import os
+import json
 from extract_metadata import extract_metadata
 from extract_objects import extract_objects
 from index_objects import index_objects
