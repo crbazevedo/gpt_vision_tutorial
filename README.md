@@ -1,4 +1,4 @@
-# GPT-4 PDF Metadata Extraction Tutorial
+# GPT-4 Vision PDF Metadata Extraction Tutorial
 
 This tutorial guides you through a pipeline that processes PDF documents, extracts metadata and other relevant information using GPT-4o, and outputs the results in a structured JSON format. The pipeline involves converting PDF pages to images, encoding these images, and sending them to the OpenAI API for processing.
 
