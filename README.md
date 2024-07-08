@@ -73,9 +73,28 @@ graph TD;
     G --> H[Output Metadata JSON]
 ```
 
-## Why Use JSON Schema?
+### Steps of PDF Processing
 
-Using a JSON schema for the extracted metadata allows for a structured and consistent way to store and retrieve information. This structured format is particularly useful for further processing, analysis, or integration with other systems.
+1. **Reading and Interpreting Document Structure**:
+   - Libraries parse the internal structure of the PDF, which includes a hierarchy of objects (pages, text blocks, images, etc.).
+   - They use the PDF file’s metadata to understand the layout and content organization.
+
+2. **Identifying Text Blocks, Images, and Tables**:
+   - **Text Blocks**: Identified by their coordinates and font properties.
+   - **Images**: Detected based on image object tags and their placement within the document.
+   - **Tables**: Extracted by analyzing the alignment and structure of text blocks that form tabular data.
+
+3. **Extracting Relevant Data**:
+   - **Text**: Extracted as strings with positional information.
+   - **Images**: Extracted as binary data, which can be saved as image files.
+   - **Tables**: Parsed into structured formats (e.g., lists of rows and columns).
+
+### Limitations
+
+- **Digitized Documents (Scanned PDFs)**:
+  - These documents are essentially images of text and do not contain structured text data.
+  - Processing them requires OCR (Optical Character Recognition) to convert images of text into actual text data.
+  - The described libraries (`pdf2image`, `fitz`, `pdfplumber`) do not perform OCR.
 
 ### Why We Need GPT-4o Vision Capabilities
 
@@ -84,12 +103,27 @@ GPT-4o’s vision capabilities allow us to process and understand the content of
 - **Extracting Image Captions and Descriptions**: Identifying and understanding the context of images within the documents.
 - **Handling Complex Layouts**: Accurately extracting metadata from documents with complex layouts such as multi-column text, embedded images, and tables.
 - **Enhanced Data Extraction**: Combining text and visual data to provide a more comprehensive extraction of metadata.
+- **Overcome Limitations of Scanned PDFs**: Enable metadata object inference even without access to PDF metadata.
+- **Limitation**: As of July 2024, does not support direct object extraction. Additional computer vision libs and techniques are required.
 
-## Detailed Steps
+## Why Use JSON Schema?
+
+Using a JSON schema for the extracted metadata allows for a structured and consistent way to store and retrieve information. This structured format is particularly useful for further processing, analysis, or integration with other systems.
+
+## Detailed Pipeline Steps
 
 ### 1. Convert PDF to Images
 
-We use `pdf2image` to convert each page of the PDF into an image. This library relies on `poppler`, a PDF rendering library.
+**Goal**: Convert each page of the PDF into an image to facilitate visual processing.
+
+**Libraries Used**: 
+- `pdf2image`: Converts PDF pages to images.
+- `poppler`: A PDF rendering library used by `pdf2image`.
+
+**Concept**: 
+1. Load the PDF using `pdf2image.convert_from_path`.
+2. Iterate through each page, convert it to an image, and save it as a PNG file.
+3. Ensure the image size is below 20MB by resizing and compressing using the `Pillow` library.
 
 ```python
 from pdf2image import convert_from_path
@@ -115,11 +149,35 @@ def convert_pdf_to_images(pdf_path, max_size=(1024, 1024), max_file_size=20*1024
 
 ### 2. Resize Images
 
-Resizing images ensures they are below the 20MB size limit for the OpenAI API.
+**Goal:** Ensure the images are below a 20MB size limit (or any other use case-specific limit).
+
+**Libraries Used:**
+
+- `Pillow`: A Python Imaging Library that adds image processing capabilities.
+
+**Concept:**
+
+	1.	Resize images to fit within a specified maximum size using `Pillow.Image.thumbnail`.
+	2.	Compress images if they exceed the size limit by reducing their dimensions and quality.
+
+**Code:**
+Included in the `convert_pdf_to_images` function above.
+
 
 ### 3. Encode Images
 
-Encode the resized images to Base64 format for sending to the API.
+**Goal:** Encode the resized images to Base64 format for sending to the API.
+
+**Libraries Used:**
+
+	•	`base64`: A module that provides functions for encoding binary data to ASCII.
+
+**Concept:**
+
+	1.	Read the image file in binary mode.
+	2.	Encode the binary data to Base64.
+
+**Code:**
 
 ```python
 import base64
@@ -131,7 +189,21 @@ def encode_image_to_base64(image_path):
 
 ### 4. Extract Metadata
 
-Use the GPT-4o API to extract metadata from the Base64-encoded images. The metadata includes the title, authors, institutions, image captions, table descriptions, and a summary of each page.
+**Goal:** Use the GPT-4o API to extract metadata from the Base64-encoded images. The metadata includes the title, authors, institutions, image captions, table descriptions, and a summary of each page.
+
+**Libraries Used:**
+
+- `openai`: The Python client library for the OpenAI API.
+
+**Concept:**
+
+	1.	Construct a prompt to instruct `GPT-4o` on the type of metadata to extract.
+	2.	Send the prompt and the Base64-encoded image to the `GPT-4o` API.
+	3.	Parse the response to extract the metadata.
+
+Use the `GPT-4o` API to extract metadata from the Base64-encoded images. 
+
+**Code:**
 
 ```python
 from openai import OpenAI
@@ -179,7 +251,18 @@ def extract_metadata_from_page(image_base64):
 
 ### 5. Extract Tables
 
-Use `pdfplumber` to extract tables from the PDF and save them in JSON format.
+**Goal:** Use `pdfplumber` to extract tables from the PDF and save them in JSON format.
+
+**Libraries Used:**
+
+	•	`pdfplumber`: A Python library for PDF processing and extraction.
+
+**Concept:**
+
+	1.	Open the PDF file using pdfplumber.
+	2.	Iterate through each page, extract tables, and save the table data in JSON format.
+
+**Code:**
 
 ```python
 import pdfplumber
@@ -220,7 +303,14 @@ if __name__ == "__main__":
 
 ### 6. Compile Results
 
-Aggregate the extracted metadata into a final JSON structure.
+**Goal:** Aggregate the extracted metadata and tables into a final JSON structure.
+
+**Concept:**
+
+	1.	Gather the extracted metadata and tables.
+	2.	Combine them into a structured JSON format for easy retrieval and further processing.
+
+ **Code:**
 
 ```python
 def coalesce(*values):
